@@ -33,8 +33,5 @@ public class TiendaMascotasTest {
     public void testMostrarInventario() {
         TiendaMascotas tienda = new TiendaMascotas();
         tienda.agregarMascotas("Fido", 3, "Perro");
-        // La prueba de mostrarInventario puede necesitar ajustes adicionales
-        // dependiendo de cómo manejes la salida en la consola.
-        // Por ahora, no hay una aserción en esta prueba.
     }
 }
