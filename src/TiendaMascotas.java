@@ -6,7 +6,7 @@ public class TiendaMascotas {
         this.inventario = new Mascota[100];
         this.cantidadMascotas = 0;
     }
-    public void agregarMascotas(String nombre, int edad, String tipoAnimal) {
+    public  void agregarMascotas(String nombre, int edad, String tipoAnimal) {
         Mascota mascota = new Mascota(nombre, edad, tipoAnimal);
         inventario[cantidadMascotas] = mascota;
         cantidadMascotas++;
@@ -27,7 +27,6 @@ public class TiendaMascotas {
         }
     }
     public void mostrarInventario(String nombre){
-        TiendaMascotas tiendaMascotas = new TiendaMascotas();
         for (int i = 0; i < cantidadMascotas; i++) {
             System.out.println("Las mascotas que hay en el inventario son " + inventario[i].getNombre());
         }
