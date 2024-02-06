@@ -33,5 +33,7 @@ public class TiendaMascotasTest {
     public void testMostrarInventario() {
         TiendaMascotas tienda = new TiendaMascotas();
         tienda.agregarMascotas("Fido", 3, "Perro");
+        tienda.venderMascota("Fido");
+        assertEquals(1, tienda.cantidadMascotas);
     }
 }
